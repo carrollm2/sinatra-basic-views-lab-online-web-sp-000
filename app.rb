@@ -1,6 +1,7 @@
-require_relative 'config/environment'
+class MyToDoApp < Sinatra::Base
 
-class App < Sinatra::Base
-
+  get '/' do
+    erb :index
+  end
 
 end
